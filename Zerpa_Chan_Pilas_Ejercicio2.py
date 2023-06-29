@@ -60,7 +60,7 @@ def contar_nombres_con_l():
     if pila_nombres.esta_vacia():
         print("La pila está vacía")
     else:
-        
+        #suma 1 cada vez que encuentra un nombre que comience con l                       suma uno cada vez que un nombre comience con L
         cantidad = sum(1  for nombre in pila_nombres.items if nombre.startswith("l")) + sum(1  for nombre in pila_nombres.items if nombre.startswith("L"))
         print(f"Cantidad de nombres que comienzan con L: {cantidad}")
 
